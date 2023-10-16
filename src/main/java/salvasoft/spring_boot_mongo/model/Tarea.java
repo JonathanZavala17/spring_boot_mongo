@@ -11,6 +11,7 @@ public class Tarea {
     private String id;
     private String nombre;
     private String apellido;
+    private Integer edad;
     private boolean completado;
 
 }
