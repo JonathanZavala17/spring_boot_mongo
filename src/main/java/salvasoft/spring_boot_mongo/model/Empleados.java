@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @Document
-public class Tarea {
+public class Empleados {
     @Id
     private String id;
     private String nombre;
@@ -14,6 +14,6 @@ public class Tarea {
     private Integer edad;
     private String cargo;
     private String direccion;
-    private boolean completado;
+    private boolean estado;
 
 }
