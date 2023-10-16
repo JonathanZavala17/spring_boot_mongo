@@ -10,6 +10,7 @@ public class Tarea {
     @Id
     private String id;
     private String nombre;
+    private String apellido;
     private boolean completado;
 
 }
