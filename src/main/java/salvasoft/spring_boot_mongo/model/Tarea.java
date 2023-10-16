@@ -12,6 +12,7 @@ public class Tarea {
     private String nombre;
     private String apellido;
     private Integer edad;
+    private String cargo;
     private boolean completado;
 
 }

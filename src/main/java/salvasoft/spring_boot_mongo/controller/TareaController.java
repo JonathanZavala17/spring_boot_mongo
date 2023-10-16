@@ -38,6 +38,7 @@ public class TareaController {
         tareaFromDB.setCompletado(tarea.isCompletado());
         tareaFromDB.setApellido(tarea.getApellido());
         tareaFromDB.setEdad(tarea.getEdad());
+        tareaFromDB.setCargo(tarea.getCargo());
 
         return tareaRepositary.save(tareaFromDB);
     }
