@@ -39,7 +39,7 @@ public class TareaController {
         tareaFromDB.setApellido(tarea.getApellido());
         tareaFromDB.setEdad(tarea.getEdad());
         tareaFromDB.setCargo(tarea.getCargo());
-
+        tareaFromDB.setDireccion(tarea.getDireccion());
         return tareaRepositary.save(tareaFromDB);
     }
 

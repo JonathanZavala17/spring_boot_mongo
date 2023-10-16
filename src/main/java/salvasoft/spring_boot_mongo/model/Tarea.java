@@ -13,6 +13,7 @@ public class Tarea {
     private String apellido;
     private Integer edad;
     private String cargo;
+    private String direccion;
     private boolean completado;
 
 }
