@@ -77,13 +77,14 @@ public class EmpleadosController {
                 .findById(id)
                 .orElseThrow(RuntimeException::new);
 
-        empleadosFromDB.setNombre(empleados.getNombre());
-        empleadosFromDB.setEstado(empleados.isEstado());
-        empleadosFromDB.setApellido(empleados.getApellido());
-        empleadosFromDB.setEdad(empleados.getEdad());
-        empleadosFromDB.setCargo(empleados.getCargo());
-        empleadosFromDB.setDireccion(empleados.getDireccion());
-        empleadosFromDB.setFecha(empleados.getFecha());
+        empleadosFromDB.setE_nombre(empleados.getE_nombre());
+        empleadosFromDB.setE_estado(empleados.isE_estado());
+        empleadosFromDB.setE_apellido(empleados.getE_apellido());
+        empleadosFromDB.setE_edad(empleados.getE_edad());
+        empleadosFromDB.setE_cargo(empleados.getE_cargo());
+        empleadosFromDB.setE_direccion(empleados.getE_direccion());
+        empleadosFromDB.setE_fecha(empleados.getE_fecha());
+        empleadosFromDB.setE_ficha(empleadosFromDB.getE_ficha());
         return empleadosRepository.save(empleadosFromDB);
     }
 
@@ -129,8 +130,9 @@ public class EmpleadosController {
         Empleados empleadosFromDB = empleadosRepository.findById(id).orElse(null);
         if (empleadosFromDB != null) {
             // Realiza las actualizaciones parciales según los campos proporcionados en "empleados".
-            if (empleados.getNombre() != null) {
-                empleadosFromDB.setNombre(empleados.getNombre());
+            if (empleados.getE_nombre() != null) {
+                empleadosFromDB.setE_nombre(empleados.getE_nombre());
+                empleadosFromDB.setE_estado(empleados.isE_estado());
             }
             // Continúa actualizando otros campos según sea necesario.
 

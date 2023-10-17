@@ -11,13 +11,14 @@ import java.util.Date;
 public class Empleados {
     @Id
     private String id;
-    private String nombre;
-    private String apellido;
-    private Integer edad;
-    private String cargo;
-    private String direccion;
-    private Date fecha;
-    private boolean estado;
+    private String e_nombre;
+    private String e_apellido;
+    private Integer e_edad;
+    private String e_cargo;
+    private String e_ficha;
+    private Date e_fecha;
+    private String e_direccion;
+    private boolean e_estado;
 
 
 }
