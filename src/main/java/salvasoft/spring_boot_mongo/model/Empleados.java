@@ -3,6 +3,8 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.Date;
+
 
 @Data
 @Document
@@ -14,6 +16,8 @@ public class Empleados {
     private Integer edad;
     private String cargo;
     private String direccion;
+    private Date fecha;
     private boolean estado;
+
 
 }

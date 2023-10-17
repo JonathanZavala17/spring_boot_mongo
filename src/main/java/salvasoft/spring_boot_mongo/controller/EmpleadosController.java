@@ -40,6 +40,7 @@ public class EmpleadosController {
         empleadosFromDB.setEdad(empleados.getEdad());
         empleadosFromDB.setCargo(empleados.getCargo());
         empleadosFromDB.setDireccion(empleados.getDireccion());
+        empleadosFromDB.setFecha(empleados.getFecha());
         return empleadosRepository.save(empleadosFromDB);
     }
 
