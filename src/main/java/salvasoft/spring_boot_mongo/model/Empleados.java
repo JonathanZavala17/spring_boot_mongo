@@ -18,7 +18,15 @@ public class Empleados {
     private String e_ficha;
     private Date e_fecha;
     private String e_direccion;
+    private String e_genero;
+    private Date e_fechaNacimiento;
+    private String e_dui;
+    private String e_salario;
+    private String e_correo;
+    private String e_telefono;
+    private String e_estadoCivil;
     private boolean e_estado;
+
 
 
 }

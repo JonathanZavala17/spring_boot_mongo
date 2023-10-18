@@ -84,7 +84,15 @@ public class EmpleadosController {
         empleadosFromDB.setE_cargo(empleados.getE_cargo());
         empleadosFromDB.setE_direccion(empleados.getE_direccion());
         empleadosFromDB.setE_fecha(empleados.getE_fecha());
-        empleadosFromDB.setE_ficha(empleadosFromDB.getE_ficha());
+        empleadosFromDB.setE_ficha(empleados.getE_ficha());
+        empleadosFromDB.setE_genero(empleados.getE_genero());
+        empleadosFromDB.setE_dui(empleados.getE_dui());
+        empleadosFromDB.setE_fechaNacimiento(empleados.getE_fechaNacimiento());
+        empleadosFromDB.setE_salario(empleados.getE_salario());
+        empleadosFromDB.setE_correo(empleados.getE_correo());
+        empleadosFromDB.setE_telefono(empleados.getE_telefono());
+        empleadosFromDB.setE_estadoCivil(empleados.getE_estadoCivil());
+
         return empleadosRepository.save(empleadosFromDB);
     }
 
